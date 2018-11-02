@@ -1,0 +1,23 @@
+menuconfig HCSR
+	bool
+	prompt "HCSR04 distance Sensor"
+	default n
+	help
+	  Enable driver for hcsr04 sensor.
+
+config HCSR0_DRV_NAME
+	string
+	prompt "Driver name"
+	default "HCSR0_DRV"
+	depends on HCSR
+	help
+	  Device name with which hcsr04 distance sensor is identified.
+
+config HCSR1_DRV_NAME
+	string
+	prompt "Driver name"
+	default "HCSR1_DRV"
+	depends on HCSR
+	help
+	  Device name with which hcsr04 distance sensor is identified.
+
